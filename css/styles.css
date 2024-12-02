@@ -103,6 +103,69 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* Set up grid layout for images */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Each image container should take up 4 columns in a 12-column grid */
+.col-md-4 {
+    width: 32%; /* Ensure 3 images per row, adjust for gaps */
+    margin-bottom: 30px; /* Space between images */
+}
+
+/* Style the image container */
+.image-container {
+    position: relative;
+    overflow: hidden; /* Prevents the button from overlapping outside the image */
+}
+
+/* Ensure images are fluid and maintain aspect ratio */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Button positioning: center it in the middle of the image */
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Add some padding and border-radius to the button */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Optional: Add hover effect to the button */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 48%; /* 2 images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-4 {
+        width: 100%; /* 1 image per row on very small screens */
+    }
+}
 
 hr {
   margin: 1rem 0;
