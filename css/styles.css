@@ -104,36 +104,36 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /* Set up grid layout for images */
-row {
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 /* Each image container should take up 4 columns in a 12-column grid */
-col-md-4 {
+.col-md-4 {
     width: 32%; /* Ensure 3 images per row, adjust for gaps */
     margin-bottom: 30px; /* Space between images */
 }
 
 /* Style the image container */
-image-container {
+.image-container {
     position: relative;
     overflow: hidden; /* Prevents the button from overlapping outside the image */
 }
 
 /* Ensure images are fluid and maintain aspect ratio */
-img-fluid {
+.img-fluid {
     width: 100%;
     height: auto;
 }
 
 /* Button positioning: center it in the middle of the image */
-position-relative {
+.position-relative {
     position: relative;
 }
 
-position-absolute {
+.position-absolute {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,7 +141,7 @@ position-absolute {
 }
 
 /* Add some padding and border-radius to the button */
-btn {
+.btn {
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
@@ -149,7 +149,7 @@ btn {
 }
 
 /* Optional: Add hover effect to the button */
-btn-primary:hover {
+.btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
 }
@@ -166,7 +166,6 @@ btn-primary:hover {
         width: 100%; /* 1 image per row on very small screens */
     }
 }
-
 hr {
   margin: 1rem 0;
   color: inherit;
