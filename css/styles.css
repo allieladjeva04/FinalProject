@@ -10921,11 +10921,13 @@ p {
   display: block;
   font-size: 2rem;
   font-weight: 800;
+  background-color: rgba(0,0,128,1);
 }
 .site-heading .site-heading-lower {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
+  background-color: rgba(0,0,128,1);
 }
 
 .page-section {
