@@ -91,12 +91,6 @@
   }
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 /* Ensure html and body take up full height and remove default margin/padding */
 html, body {
   height: 100%;
