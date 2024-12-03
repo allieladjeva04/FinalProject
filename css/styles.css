@@ -91,15 +91,15 @@
   }
 }
 
-/* Ensure html and body take up full height and remove default margin/padding */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
 * {
-  background: transparent;
+  background: transparent;  /* Ensures no child elements have a background */
 }
 
 /* Main body styling */
@@ -110,16 +110,16 @@ body {
   line-height: var(--bs-body-line-height);
   text-align: var(--bs-body-text-align);
   position: relative; /* Ensure positioning for pseudo-element */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%); /* Transparent gradient */
-  background-attachment: fixed;
+  background-image: url("../assets/img/gosman.jpg"); /* Apply background image directly to body */
   background-position: center;
   background-size: cover;
-  min-height: 100vh; 
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  min-height: 100vh; /* Ensures the body is at least the height of the viewport */
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* Pseudo-element to add the background image with transparency */
+/* Optional: If you want a gradient overlay on top of the image */
 body::before {
   content: "";
   position: absolute;
@@ -127,11 +127,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/img/gosman.jpg");
-  background-position: center;
-  background-size: cover;
-  opacity: 0.5; /* Keeps the image semi-transparent */
-  z-index: -1; /* Ensures the background stays behind content */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%); /* Transparent gradient */
+  opacity: 0.5; /* Semi-transparent gradient */
+  z-index: -1; /* Ensures the gradient stays behind content */
 }
 /* Set up grid layout for images */
 .row {
