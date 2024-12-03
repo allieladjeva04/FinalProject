@@ -97,6 +97,14 @@ html, body {
   padding: 0;
 }
 
+/* Ensure html and body take up full height and remove default margin/padding */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main body styling */
 body {
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -104,8 +112,15 @@ body {
   line-height: var(--bs-body-line-height);
   text-align: var(--bs-body-text-align);
   position: relative; /* Ensure positioning for pseudo-element */
+  background-image: linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 128, 0.5)); 
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* Pseudo-element to add the background image */
 body::before {
   content: "";
   position: absolute;
@@ -118,15 +133,6 @@ body::before {
   background-size: cover;
   opacity: 0.5; /* Controls transparency of the image */
   z-index: -1; /* Ensures the background stays behind content */
-}
-
-body {
-  background-image: linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 128, 0.5)); 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /* Set up grid layout for images */
 .row {
