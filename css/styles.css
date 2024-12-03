@@ -93,6 +93,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -10900,6 +10901,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 p {
