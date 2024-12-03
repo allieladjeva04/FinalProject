@@ -120,12 +120,7 @@ body {
 .image-container {
     position: relative;
     overflow: hidden; /* Prevents the button from overlapping outside the image */
-    height: 200px;
-}
-.image-container-image2 {
-    position: relative;
-    overflow: hidden; /* Prevents the button from overlapping outside the image */
-    height: auto;
+    height: 400px;
 }
 
 /* Ensure images are fluid and maintain aspect ratio */
