@@ -10895,8 +10895,9 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-image: url("../assets/img/gosman.jpg");
-  background-color: rgba(0,0,128,1);
+   background-image: 
+    url("../assets/img/gosman.jpg"), 
+    linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 128, 0.5)); /* Adds a semi-transparent overlay */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
