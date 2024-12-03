@@ -24,7 +24,7 @@
   --bs-black: #000;
   --bs-white: #fff;
   --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --bs-gray-dark: #00008b;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
@@ -43,7 +43,7 @@
   --bs-light:#00bfff;
   --bs-dark: #212529;
   --bs-primary-rgb: 0, 0, 139;
-  --bs-secondary-rgb: 47, 23, 15;
+  --bs-secondary-rgb: 0, 0, 139;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
