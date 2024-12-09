@@ -176,8 +176,8 @@ body::before {
 .header-image1 img, .header-image2 img, .header-image3 img, .header-image4 img {
     display: block; 
     max-width: 100%;
-    width: auto; 
-    height: 1200px; 
+    width: 100%; 
+    height: auto; 
     margin: 0; 
     padding: 2px;
     box-sizing: border-box; 
