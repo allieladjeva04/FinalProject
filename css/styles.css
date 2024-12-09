@@ -91,35 +91,6 @@
   }
 }
 
-.header-images {
-    display: flex;
-    justify-content: center; 
-    gap: 30px; 
-    padding: 10px; 
-    max-width: 100%;
-    box-sizing: border-box; 
-    overflow: hidden; 
-    margin-bottom: 40px;
-}
-
-.header-image1, .header-image2, .header-image3, .header-image4 {
-    display: inline-block;
-    padding: 2px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    margin: 10px;
-}
-
-.header-image1 img, .header-image2 img, .header-image3 img, .header-image4 img {
-    display: block; 
-    max-width: 100%;
-    width: auto; 
-    height: 400px; 
-    margin: 0; 
-    padding: 2px;
-    box-sizing: border-box; 
-    object-fit: cover;
-}
 
 html, body {
   height: 100%;
@@ -177,14 +148,41 @@ body::before {
     position: relative;
     overflow: hidden; /* Prevents any content from overflowing outside the image container */
     height: auto;
-    flex-shrink: 0; /* Prevent the images from shrinking */
 }
 
 .img-fluid {
     width: 100%; /* Makes the images fit the width of the container */
     height: auto; /* Keeps the aspect ratio intact */
 }
+.header-images {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    padding: 10px; 
+    max-width: 100%;
+    box-sizing: border-box; 
+    overflow: hidden; 
+    margin-bottom: 40px;
+}
 
+.header-image1, .header-image2, .header-image3, .header-image4 {
+    display: inline-block;
+    padding: 2px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.header-image1 img, .header-image2 img, .header-image3 img, .header-image4 img {
+    display: block; 
+    max-width: 100%;
+    width: auto; 
+    height: 400px; 
+    margin: 0; 
+    padding: 2px;
+    box-sizing: border-box; 
+    object-fit: cover;
+}
 /* Button positioning: center it in the middle of the image */
 .position-relative {
     position: relative;
