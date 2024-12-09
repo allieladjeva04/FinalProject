@@ -172,17 +172,11 @@ body::before {
     width: 32%; /* Ensure 3 images per row, adjust for gaps */
     margin-bottom: 30px; /* Space between images */
 }
-.container {
-    display: flex;
-    gap: 20px; /* Space between the images */
-    justify-content: center; /* Centers images horizontally */
-    align-items: center; /* Vertically aligns images */
-}
+
 .image-container {
     position: relative;
     overflow: hidden; /* Prevents any content from overflowing outside the image container */
     height: auto;
-    width: 200px; /* Set a specific width for the image containers */
     flex-shrink: 0; /* Prevent the images from shrinking */
 }
 
